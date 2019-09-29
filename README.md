@@ -7,7 +7,6 @@ This repository contains Labtwin Assignment Work.
 Followings are prerequisites  
             1. Kubernetes Cluster is properly setup
             2. Jenkins works in conjunction of Kubernetes . Here jenkins is setup using Helm Chart in Kubernetes cluster.
- # Time Taken 
  
  # Areas of Improvements
  
