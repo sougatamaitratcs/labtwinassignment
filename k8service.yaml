@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: labtwinassignment
+spec:
+  selector:
+    app: labtwinassignment
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 8089
+    targetPort: 8080  
