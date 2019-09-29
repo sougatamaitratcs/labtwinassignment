@@ -1,0 +1,27 @@
+apiVersion: apps/v1           
+kind: Deployment             
+metadata:
+  name: labtwinassignment           
+  labels:                    
+    app: labtwinassignment
+spec:
+  replicas: 1                 
+  selector:
+    matchLabels:             
+      app: labtwinassignment
+  template:                   
+    metadata:
+      labels:                 
+        app: labtwinassignment
+    spec:                    
+      containers:
+      - name: labtwinassignment
+        image: sougatamaitra/labtwinassignment
+        imagePullPolicy: IfNotPresent
+        ports:
+          - name: http
+            containerPort: 8080
+ 
+            
+ 
+            
