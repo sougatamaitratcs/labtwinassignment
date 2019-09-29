@@ -12,8 +12,10 @@ volumes: [
 
 	  git 'https://github.com/sougatamaitratcs/labtwinassignment.git'
 	  stage('Build and Unit Test code') {
-	      sh("mvn test")
-	      sh("mvn package")
+	  	container('maven') {
+	        sh("mvn test")
+	        sh("mvn package")
+	      }
 	  }
   
 	  stage('Build Docker image') {
